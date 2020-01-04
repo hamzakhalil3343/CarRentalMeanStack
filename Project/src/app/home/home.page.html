@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      HK Rentals 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let car of cars">
+    
+   
+    
+
+    <img src="assets/img/mehran.jpg" alt ="image">
+    <ion-card-header>
+      <ion-card-title>{{car?.name}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{car?.price}}
+
+
+    </ion-card-content>
+  
+
+
+
+  </ion-card>
+  <ion-card>
+    <img src="https://imgd.aeplcdn.com/1056x594/cw/ec/26916/Audi-Q3-Front-view-92293.jpg?v=201711021421&q=85" />
+    <ion-card-header>
+      <ion-card-title>Audi</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Price :1000
+
+
+    </ion-card-content>
+  
+
+
+
+  </ion-card>
+  <ion-card>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0v8hw3vmCHq6TE9xOHncjLXREG-lteaUZHQAYbeFuBea_W1JA&s" />
+    <ion-card-header>
+      <ion-card-title>Corolla</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Price :1000
+
+
+    </ion-card-content>
+  
+
+
+
+  </ion-card>
+
+
+  <ion-card>
+   
+    <ion-card-header>
+      <ion-card-title>Civic </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Price :1000
+
+
+    </ion-card-content>
+  
+
+
+
+  </ion-card>
+</ion-content>

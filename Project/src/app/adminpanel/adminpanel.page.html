@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-title>AdminPanel </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="adminForm">
+    <div class="ion-padding">
+      <ion-item >
+       <ion-input   type="text"  formControlName="name" placeholder="Enter Name of Car " >  </ion-input>
+
+
+      </ion-item>
+      <ion-item>
+    
+  <ion-input type="file" formControlName="file"  (change)="fileupload($event)" ></ion-input>
+      </ion-item>
+      <ion-item><ion-input type="input"  formControlName="price"  placeholder="Enter price "></ion-input></ion-item>
+      
+      
+       <ion-button type="submit" aria-setsize="3px" (click)="onSubmit()">Upload</ion-button>  
+     
+      
+  
+
+    </div>
+  </form>
+  
+  
+
+
+</ion-content>
